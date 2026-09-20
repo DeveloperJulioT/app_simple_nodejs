@@ -14,7 +14,7 @@ job('Aplicacion Node.js Docker DSL') {
     }
     steps {
         dockerBuildAndPublish {
-            repositoryName('DeveloperJulioT/app_simple_nodejs')
+            repositoryName('juliotarquino/app_simple_nodejs')
             tag('${GIT_REVISION,length=7}')
             registryCredentials('docker-hub')
             forcePull(false)
